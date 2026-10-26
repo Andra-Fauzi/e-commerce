@@ -6,15 +6,15 @@
     <title>@yield("title")</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="bg-background text-foreground border-border">
     <nav class="flex p-5 w-full justify-between border-b-2 border-black">
-        <div class="logo mt-3 ml-4">
-            <h1>KUE</h1>
+        <div class="logo ml-4 border-border bg-accent rounded-2xl p-2 px-5">
+            <h1 class="text-4xl text-foreground">KUE</h1>
         </div>
-        <div class="searchBar flex border-primary border-2 rounded-2xl p-2 w-2/4">
+        <div class="searchBar flex border-border border-2 rounded-2xl p-2 w-2/4">
             <form action="keranjang" method="get" class="flex w-full">
-                <input type="text" name="search" id="search" class="w-full">
-                <input type="submit" value="search">
+                <input type="text" placeholder="Kue kering, Timpan, Croissant" name="search" id="search" class="w-full">
+                <input class="bg-accent p-1 rounded-2xl" type="submit" value="search">
             </form>
         </div>
         <div class="user flex justify-between">
@@ -27,5 +27,8 @@
         </div>
     </nav>
     @yield("content")
+    <footer class="text-center p-4 border-t-2 border-border">
+        &copy; {{ date('Y') }} KUE. Hak cipta dilindungi.
+    </footer>
 </body>
 </html>

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('katalogs', function (Blueprint $table) {
             $table->id();
             $table->string("nama");
+            $table->string("img_path");
             $table->timestamps();
         });
     }

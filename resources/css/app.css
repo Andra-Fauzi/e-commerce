@@ -29,3 +29,20 @@ input[type="text"] {
   border: none;      /* Menghapus garis border utama */
   outline: none;     /* Menghapus garis fokus/biru bawaan browser */
 }
+
+.test_aja {
+    --color-primary: #8B5E3C;
+    --color-secondary: #F472B6;
+    --color-accent: #FFEDD5;
+
+    --color-background: #FFF9F5;
+    --color-surface: #FFFFFF;
+    --color-foreground: #4A3F35;
+
+    --color-muted: #9CA3AF;
+    --color-border: #E7DDD5;
+
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+}

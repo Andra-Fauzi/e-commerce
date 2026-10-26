@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer("harga");
             $table->foreignId("katalog_id")->constrained();
             $table->text("deskripsi");
+            $table->string("img_path");
             $table->timestamps();
         });
     }

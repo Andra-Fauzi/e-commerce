@@ -15,16 +15,20 @@ class KatalogSeeder extends Seeder
     {
         //
         Katalog::create([
-            "nama" => "Kue Basah"
+            "nama" => "Kue Basah",
+            "img_path" => "assets/kue_basah.jpg",
         ]);
         Katalog::create([
-            "nama" => "Kue Kering"
+            "nama" => "Kue Kering",
+            "img_path" => "assets/kue_kering.jpg",
         ]);
         Katalog::create([
-            "nama" => "Pastry"
+            "nama" => "Pastry",
+            "img_path" => "assets/pastry.jpg",
         ]);
         Katalog::create([
-            "nama" => "Bolu"
+            "nama" => "Bolu",
+            "img_path" => "assets/bolu.jpg",
         ]);
     }
 }

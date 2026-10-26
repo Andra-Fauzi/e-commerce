@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
 {
-    public function home(ProdukController $produkController) {
+    public function home(ProdukController $produkController, KatalogController $katalogController) {
         $produk = $produkController->get(12);
         // echo $produk;
+        $katalog = $katalogController->get();
         return view("home", [
-            "produk" => $produk
+            "produk" => $produk,
+            "katalog" => $katalog
         ]);
     }
     public function produk() {
