@@ -21,7 +21,9 @@
             <input type="password" name="password" id="password" required
                    placeholder="Password"
                    class="w-full h-16 border border-border rounded-lg px-5 text-lg bg-transparent outline-none">
-
+            @error('email')
+                <p class="text-red-600 mb-3">{{ $message }}</p>
+            @enderror
             <div class="flex justify-between items-center mt-4 mb-12">
                 <label for="remember" class="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" name="remember" id="remember" class="w-5 h-5">

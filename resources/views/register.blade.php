@@ -18,7 +18,7 @@
                    placeholder="Alamat email"
                    class="w-full h-16 border border-border rounded-lg px-5 text-lg mb-6 bg-transparent outline-none">
 
-            <input type="nama" name="nama" id="nama" required
+            <input type="name" name="name" id="name" required
                    placeholder="Username"
                    class="w-full h-16 border border-border rounded-lg px-5 text-lg mb-6 bg-transparent outline-none">
 

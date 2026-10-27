@@ -27,11 +27,11 @@
             </div>
             <div class="produk flex w-full gap-2 overflow-x-auto pb-2">
                 @foreach ($produk as $item)
-                    <div class="barang shrink-0 w-[calc((100%-1.5rem)/4)] min-w-[250px] border-border text-center border-2 rounded-xl bg-surface p-2">
-                        <img src="{{ $item->img_path }}" alt="img" class="w-full aspect-[4/3] object-cover">
+                    <a href="/produk/{{ $item->id }}" class="barang shrink-0 w-[calc((100%-1.5rem)/4)] min-w-[250px] border-border text-center border-2 rounded-xl bg-surface p-2">
+                        <img src="{{ asset($item->img_path) }}" alt="img" class="w-full aspect-[4/3] object-cover">
                         <h1 class="text-2xl">{{ $item->nama }}</h1>
                         <h2>Harga: Rp{{ $item->harga }}</h2>
-                    </div>
+                    </a>
                     
                 @endforeach
             </div>
@@ -41,10 +41,10 @@
         </div>
         <div class="kategori-produk flex w-full gap-2 overflow-x-auto pb-2">
             @foreach ($katalog as $item)
-                <div class="barang shrink-0 w-[calc((100%-1.5rem)/4)] min-w-[250px] border-border text-center border-2 rounded-xl bg-surface p-2">
-                    <img src="{{ $item->img_path }}" alt="img" class="w-full aspect-[4/3] object-cover">
+                <a href="#" class="barang shrink-0 w-[calc((100%-1.5rem)/4)] min-w-[250px] border-border text-center border-2 rounded-xl bg-surface p-2">
+                    <img src="{{ asset($item->img_path) }}" alt="img" class="w-full aspect-[4/3] object-cover">
                     <h1 class="text-2xl">{{ $item->nama }}</h1>
-                </div>
+                </a>
             @endforeach
         </div>
     </div>
